@@ -277,7 +277,7 @@ h1 {
     text-align: center;
     font-size: 3em;
 }
-/* estlio menu */
+        /* estlio menu */
 .menu-header {
     background-color: black;
     display: flex;
@@ -424,7 +424,7 @@ footer{
     margin-top: 1em;
 }
 
-/* menu footer */
+        /* menu footer */
 
 .menu-2 {
     background-color: black;
@@ -575,7 +575,33 @@ footer {
 }
 
         /* menu header */
-
+        
+.menu-header {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+.menu-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 2em;
+    display: flex;
+        
+}
+.menu-header li {
+            margin: 0 2em;
+}
+.menu-header a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+}
+.menu-header a:hover{
+    background-color: #0b96f3;
+}
+        
+        /* fin menu */
         /* fotos promo */
 
 .img-promos img {
@@ -624,23 +650,71 @@ footer {
 
         /* pagina de contacto */
 
-.color-titulo{
-    color: #fff;
+        /* mobil */
+@media screen and (max-width: 480px){
     
+    #grilla-contacto {
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20% auto 10%;
+}
+        /* areas grid */
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+        /* fin area */
+.menu-header{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+.menu-header ul{
+    list-style: none;
+    margin: 0;
+    padding: 2em;
+    display: flex;
+}
+.menu-header li{
+                margin: 0 2em;
+}
+.menu-header a{
+    color: #fff;
+    text-decoration: none;
+    padding: 2em;
+}
+.menu-header a:hover {
+    background-color: #0b96f3;
+}
+
+        /* fin menu */
+.color-titulo{
+    color: #fff;  
 }
 
         /* img de fondo */
 .fondo-img{
     background-image: url("./fotos/pileta-escalera.jpg");
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-size: cover;
 	background-position: center center;
 }
 /* texto principal */
 .texto-contacto{
+    font-family: "NotoSerif-regular";
     text-align: center;
     font-size: 2em;
-    color: #0b96f3;   
+    color: #1b2be1;   
 }
 /* formularios */
 .formularios{
@@ -649,8 +723,280 @@ footer {
     width: 25%;
     margin: 0 auto;
 }
+.boton-form {
+    margin-top: 0.5em;
+    color: white;
+    background-color:  black;
+    border: 1px solid white;
+    font-weight: 500;
+    cursor: pointer;
+}
+.boton-form:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+        /* menu footer */
 
-/* pag preguntas frecuentes */
+.menu-2 {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+.menu-2 ul {
+    list-style: none;
+    margin: 0;
+    padding: 2em;
+    display: flex;
+}
+.menu-2 li {
+    margin: 0 2em;
+}
+.menu-2 a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+}
+.menu-2 a:hover {
+            background-color: #0b96f3;
+}
+}
+
+    /* tablet */
+
+@media screen and (min-width: 480px) and (max-width: 1200px){
+    #grilla-promo {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: 25% auto 25%;
+    grid-template-rows: 10% auto 10%;
+}
+    
+        /* areas grid */
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+}
+    
+            
+        /* menu header */
+
+.menu-header {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+.menu-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 2em;
+    display: flex;
+}
+.menu-header li {
+    margin: 0 2em;
+}
+.menu-header a {
+    color: #fff;
+    text-decoration: none;
+    padding: 2em;
+}
+.menu-header a:hover {
+    background-color: #0b96f3;
+}
+        /* fin menu */
+.color-titulo{
+    color: #fff;  
+}        
+        /* img de fondo */
+.fondo-img{
+    background-image: url("./fotos/pileta-escalera.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+}
+        /* texto principal */
+.texto-contacto{
+    font-family: "NotoSerif-regular";
+    text-align: center;
+    font-size: 2em;
+    color: #1b2be1;   
+}
+        /* formularios */
+.formularios{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 0 auto;
+}
+.boton-form {
+    margin-top: 0.5em;
+    color: white;
+    background-color:  black;
+    border: 1px solid white;
+    font-weight: 500;
+    cursor: pointer;
+}
+.boton-form:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+        /* menu footer */
+.menu-2 {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+.menu-2 ul {
+    list-style: none;
+    margin: 0;
+    padding: 2em;
+    display: flex;
+}
+.menu-2 li {
+    margin: 0 2em;
+}
+.menu-2 a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+}
+.menu-2 a:hover {
+        background-color: #0b96f3;
+}
+        /* fin menu footer */
+}
+
+        /* desktop */
+@media screen and (min-width: 1200px){
+    #grilla-promo {
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20% auto 10%;
+        height: 95vh;
+        margin: 2em;
+}
+        /* areas grid */
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+}
+        /* estlio menu */
+.menu-header {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+.menu-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 2em;
+    display: flex;
+        
+}
+.menu-header li {
+    margin: 0 2em;
+}
+.menu-header a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+}
+.menu-header a:hover{
+    background-color: #0b96f3;
+}
+        
+        /* fin menu */ 
+.color-titulo{
+    color: #fff;  
+}
+        /* img de fondo */
+.fondo-img{
+    background-image: url("./fotos/pileta-escalera.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+        /* texto principal */
+.texto-contacto{
+    font-family: "NotoSerif-regular";
+    text-align: center;
+    font-size: 2em;
+    color: #1b2be1;
+    margin-bottom: 1em;   
+}
+        /* formularios */
+.formularios{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+.boton-form {
+    margin-top: 0.5em;
+    color: white;
+    background-color:  black;
+    border: 1px solid white;
+    font-weight: 500;
+    cursor: pointer;
+}
+.boton-form:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+        
+        /* menu footer */
+.menu-2 {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+            padding: 1em;
+}
+.menu-2 ul {
+    list-style: none;
+    margin: 0;
+    padding: 2em;
+    display: flex;
+}
+.menu-2 li {
+    margin: 0 2em;
+}
+        .menu-2 a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+}
+.menu-2 a:hover {
+    background-color: #0b96f3;
+}
+}
+
+
+
+        /* pag preguntas frecuentes */
 .img-preguntas img{
     width: 50%;
     margin-left: 25%;
@@ -663,12 +1009,15 @@ footer {
 .preguntas ul{
     list-style: none;
 }
-/* fin pag preguntas frecuentes */
-/* pag galeria */
-.titutlo-galeria h1{
-    background-color: rgb(107, 75, 137);
-    /* forma imagenes */
+    /* fin pag preguntas frecuentes */
+.img-preguntas {
+margin-bottom: 2em;
 }
+        /* pag galeria */
+
+
+        /* forma imagenes */
+
 .img-gal img{
     width: 400px;
     height: 400px;
