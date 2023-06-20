@@ -1,0 +1,17 @@
+.img-promos {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1em;
+    p {
+        text-align: center;
+        color: $rojo;
+        font-size: 1em;
+        font-family: $fuente-textos;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+}

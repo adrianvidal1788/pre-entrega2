@@ -1,0 +1,65 @@
+//mobil
+@media screen and (max-width: 480px){
+    #menu-desktop{
+        display: none;
+    }
+    h1 {
+        font-size: $tamanio-parrafos;
+    }
+#menu-mobil a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: $blanco;
+
+}       
+.menu-2 {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    ul {
+        @include menu-ul;
+        }
+    li {
+        margin: 0 2em;
+        }
+    a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0;
+    }    
+                
+    }
+    //home
+.mapa {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+} 
+.titulo-central{
+    font-size: 1.5;
+}
+.parrafo-central{
+    font-size: 1em;
+}   
+
+}    
+//tablet
+@media screen and (min-width: 480px) and (max-width: 1200px){
+#menu-mobil {
+    display: none;
+}
+
+}
+
+//desktop
+@media screen and (min-width: 1200px){
+#menu-mobil {
+    display: none;
+}
+ul {
+    list-style-type: none;
+}
+
+}
