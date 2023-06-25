@@ -8,8 +8,9 @@
 }
 h1 {
   font-family: "DancingScript-SemiBold";
+  color: #fff;
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
   margin-top: 1em;
   margin-bottom: 1em;
   animation-duration: 5s;
@@ -17,7 +18,7 @@ h1 {
   animation-iteration-count: 1;
 }
 
-#menu-desktop {
+.menu-desktop {
   animation-duration: 7s;
   animation-name: aparecer;
   animation-iteration-count: 1;
@@ -38,6 +39,10 @@ h1 {
 }
 .container-fluid a:hover {
   background-color: #0b96f3;
+}
+.container-fluid a .navbar-brand {
+  display: flex;
+  justify-content: center;
 }
 
 h2 {
@@ -62,12 +67,82 @@ h2 {
   height: 10%;
 }
 
-.mapa {
+.mapa-video {
   display: flex;
-  flex-direction: center;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 1em;
+  background-color: rgb(222, 216, 216);
+  margin-bottom: 2em;
+}
+.mapa-video .mapa {
+  margin: 1em;
+}
+.mapa-video .video {
+  margin: 1em;
+}
+
+.habitaciones {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.habitaciones img {
+  margin: 1em;
+}
+.habitaciones .loft {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 1em;
+}
+.habitaciones .dormitorio-1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 1em;
+}
+.habitaciones .dormitorio-superior {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 1em;
+}
+
+.nuestros-servicios {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.nuestros-servicios .limpieza img {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 1em;
+}
+.nuestros-servicios .amenities img {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 1em;
+}
+.nuestros-servicios .comidas img {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 1em;
+}
+
+.nuestros-servicios {
+  background-color: rgb(222, 216, 216);
 }
 
 .color-titulo {
@@ -95,12 +170,12 @@ h2 {
 
 .img-promos {
   display: flex;
-  flex-direction: column;
-  align-content: center;
+  flex-direction: row;
+  justify-content: center;
   width: auto;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 1em;
+}
+.img-promos .card {
+  margin: 2em;
 }
 .img-promos p {
   text-align: center;
@@ -111,13 +186,30 @@ h2 {
   margin-top: 1em;
 }
 
-.img-gal {
-  display: block;
-  margin-left: 10%;
+.texto-promos {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
 }
-.img-gal img {
-  width: 400px;
-  height: 400px;
+.texto-promos p {
+  text-align: center;
+  margin: 1em;
+}
+
+.villa {
+  background-color: rgb(222, 216, 216);
+}
+.villa h3 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.fotos-villa {
+  display: flex;
+  justify-content: center;
+}
+.fotos-villa .card {
+  margin: 2em;
 }
 
 .row p {
@@ -126,10 +218,19 @@ h2 {
   color: #fff;
 }
 
-.menu-2 {
+.footer-menu {
   display: flex;
   justify-content: center;
-  padding: 1em;
+  background-color: black;
+  margin-bottom: 0%;
+}
+
+.menu-2 {
+  margin-bottom: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
   background-color: black;
 }
 .menu-2 ul {
@@ -145,23 +246,70 @@ h2 {
   color: #fff;
   text-decoration: none;
   padding: 1em;
+  margin: 1em;
 }
 .menu-2 a:hover {
   background-color: #0b96f3;
+  padding: 0.5em;
+}
+
+.footer {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.contactanos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+}
+.contactanos ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.contactanos li {
+  margin: 0 2em;
+}
+.contactanos p {
+  color: #fff;
+}
+
+.menu-2 {
+  list-style-type: none;
 }
 
 @media screen and (max-width: 480px) {
-  #menu-desktop {
+  .menu-desktop {
     display: none;
   }
   h1 {
     font-size: 2em;
   }
-  #menu-mobil a {
+  .menu-mobil a {
     display: flex;
     flex-direction: column;
     text-decoration: none;
     color: #fff;
+  }
+  .menu-mobil a h1 {
+    font-size: 1em;
+  }
+  .habitaciones {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .nuestros-servicios {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
   }
   .menu-2 {
     background-color: black;
@@ -183,10 +331,46 @@ h2 {
     text-decoration: none;
     padding: 0;
   }
-  .mapa {
+  .menu-2 .contactanos {
+    background-color: black;
     display: flex;
     flex-direction: column;
+    padding: 1em;
+  }
+  .menu-2 .contactanos ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .menu-2 .contactanos li {
+    margin: 0 2em;
+  }
+  .menu-2 .contactanos p {
+    color: #fff;
+  }
+  .menu-2 .menu-2 {
+    list-style-type: none;
+  }
+  .menu-2 .footerr-menu {
+    margin-bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mapa-video {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     width: 300px;
+  }
+  .mapa-video .mapa {
+    width: auto;
+    margin: 0;
+  }
+  .mapa-video .video {
+    width: auto;
+    margin: 0;
   }
   .titulo-central {
     font-size: 1.5;
@@ -194,14 +378,50 @@ h2 {
   .parrafo-central {
     font-size: 1em;
   }
+  .img-promos {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .img-promos .card {
+    margin: 1em;
+  }
+  .texto-promos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .fotos-villa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .fotos-villa .card {
+    margin: 1em;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 1200px) {
-  #menu-mobil {
+  .menu-mobil {
     display: none;
+  }
+  .mapa-video {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+  }
+  .menu-2 {
+    list-style-type: none;
+  }
+  .habitaciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
   }
 }
 @media screen and (min-width: 1200px) {
-  #menu-mobil {
+  .menu-mobil {
     display: none;
   }
   ul {

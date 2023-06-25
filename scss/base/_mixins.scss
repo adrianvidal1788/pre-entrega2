@@ -2,8 +2,9 @@
 @mixin flex-center-padding{
     //black
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 1em;
+    padding: 2em;
 } 
 //ul
 @mixin menu-ul{
@@ -11,4 +12,11 @@
     margin: 0;
     padding: 0;
     display: flex;
+}
+//fotos habiticiones
+@mixin fotos-habitaciones{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1em;
 }

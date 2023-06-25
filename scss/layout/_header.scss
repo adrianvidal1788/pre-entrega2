@@ -1,7 +1,8 @@
 h1{
     font-family: $fuente-titulos;
+    color: $blanco;
     text-align: center;
-    font-size: $tamanio-titulos;
+    font-size: $tamanio-parrafos;
     margin-top: 1em;
     margin-bottom: 1em;
     animation-duration: 5s;
@@ -9,7 +10,7 @@ h1{
     animation-iteration-count: 1;
 
 }
-#menu-desktop {
+.menu-desktop {
     animation-duration: 7s;
     animation-name: aparecer;
     animation-iteration-count: 1;
@@ -29,5 +30,9 @@ h1{
     &:hover{
         background-color: $azul-hover;
     }
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+}
 
 }

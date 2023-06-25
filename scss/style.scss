@@ -1,12 +1,12 @@
-@import "_fuentes";
-@import "variables";
-@import "mixins";
-@import "header";
-@import "main-home";
-@import "main-contacto";
-@import "main-promo";
-@import "main-galeria";
-@import "main-preguntas";
-@import "footer";
-@import "mediaquerie";
+@import "./base/fuentes";
+@import "./base/variables";
+@import "./base/mixins";
+@import "./layout/header";
+@import "./layout/main-home";
+@import "./layout/main-contacto";
+@import "./layout/main-promo";
+@import "./layout/main-galeria";
+@import "./layout/main-preguntas";
+@import "./layout/footer";
+@import "./layout/mediaquerie";
 

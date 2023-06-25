@@ -1,0 +1,26 @@
+.img-promos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    .card {
+        margin: 2em;
+    }
+    p {
+        text-align: center;
+        color: $rojo;
+        font-size: 1em;
+        font-family: $fuente-textos;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+}
+.texto-promos {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+    p {
+        text-align: center;
+        margin: 1em;
+    }
+}

@@ -1,0 +1,149 @@
+//mobil
+@media screen and (max-width: 480px){
+    .menu-desktop{
+        display: none;
+    }
+    h1 {
+        font-size: $tamanio-parrafos;
+    }
+.menu-mobil a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: $blanco;
+    h1 {
+        font-size: 1em;
+    }
+
+}    
+.habitaciones {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}   
+.nuestros-servicios {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+}
+.menu-2 {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    ul {
+        @include menu-ul;
+        }
+    li {
+        margin: 0 2em;
+        }
+    a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0;
+    } 
+    .contactanos {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        ul {
+            @include menu-ul;
+        }
+        li {
+            margin: 0 2em;
+        }
+        p {
+            color: $blanco;
+        }
+
+    } 
+    .menu-2 {
+        list-style-type: none;
+    }  
+    .footerr-menu {
+        margin-bottom: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;           
+    }
+}
+    //home
+.mapa-video {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    .mapa {
+        width: auto;
+        margin: 0;
+    }
+    .video {
+        width: auto;
+        margin: 0;
+    }
+} 
+.titulo-central{
+    font-size: 1.5;
+}
+.parrafo-central{
+    font-size: 1em;
+}   
+.img-promos {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    .card {
+        margin: 1em;
+    }
+}
+.texto-promos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.fotos-villa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .card{
+    margin: 1em;
+    }
+}
+}    
+//tablet
+@media screen and (min-width: 480px) and (max-width: 1200px){
+.menu-mobil {
+    display: none;
+}
+.mapa-video {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+}
+.menu-2 {
+    list-style-type: none;
+}
+.habitaciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+}
+}
+
+//desktop
+@media screen and (min-width: 1200px){
+.menu-mobil {
+    display: none;
+}
+ul {
+    list-style-type: none;
+}
+
+}

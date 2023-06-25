@@ -1,0 +1,51 @@
+.footer-menu {
+    display: flex;
+    justify-content: center; 
+    background-color: $negro;
+    margin-bottom: 0%;
+}
+
+.menu-2 {
+    margin-bottom: 0%;
+    @include flex-center-padding;
+    background-color: $negro;
+        ul {
+            @include menu-ul;
+        }
+        li {
+            margin: 0 2em;
+        }
+        a {
+            color: $blanco;
+            text-decoration: none;
+            padding: 1em;
+            margin: 1em;
+            &:hover{
+                background-color: $azul-hover;
+                padding: 0.5em;
+            }
+        }
+}
+.footer {
+    color: $blanco;
+    text-decoration: underline;
+}
+.contactanos {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: $negro;
+        ul {
+            @include menu-ul;
+        }
+        li {
+            margin: 0 2em;
+        }
+        p { color: $blanco;
+
+        }
+    
+}    
+.menu-2 {
+    list-style-type: none;
+}
