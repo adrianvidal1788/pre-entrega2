@@ -4,20 +4,24 @@
     margin-top: 1em;
     margin-bottom: 1em;
 }
-.fondo-img{
-    background-image: url("../fotos/habitacion-2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+.formularios {
+    background-color: $gris;
+    margin-bottom: 3em;
 }
+
 .texto-contacto{
     font-family: $fuente-titulos;
     text-align: center;
     font-size: 2em;
     color: $negro;
-    margin-top: 1em;
-    margin-bottom: 1em;   
+    margin-top: 2em;
+    margin-bottom: 2em;   
+    background-color: none;
 }
-main {
-    height: 80vh;
+.sub {
+    font-family: $fuente-textos;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }

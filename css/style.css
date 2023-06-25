@@ -152,11 +152,9 @@ h2 {
   margin-bottom: 1em;
 }
 
-.fondo-img {
-  background-image: url("../fotos/habitacion-2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+.formularios {
+  background-color: rgb(222, 216, 216);
+  margin-bottom: 3em;
 }
 
 .texto-contacto {
@@ -164,12 +162,17 @@ h2 {
   text-align: center;
   font-size: 2em;
   color: black;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background-color: none;
 }
 
-main {
-  height: 80vh;
+.sub {
+  font-family: "NotoSerif-regular";
+  text-align: center;
+  font-size: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .img-promos {
@@ -214,6 +217,21 @@ main {
 }
 .fotos-villa .card {
   margin: 2em;
+}
+
+.descripcion-gal {
+  font-family: "NotoSerif-regular";
+}
+
+.texto-villa {
+  background-color: rgb(222, 216, 216);
+  text-align: center;
+  font-family: "NotoSerif-regular";
+}
+
+.pre {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .row p {
