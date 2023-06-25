@@ -168,6 +168,10 @@ h2 {
   margin-bottom: 1em;
 }
 
+main {
+  height: 80vh;
+}
+
 .img-promos {
   display: flex;
   flex-direction: row;
