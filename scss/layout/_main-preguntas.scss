@@ -8,3 +8,28 @@
     background-color: $negro;
     color: $blanco;
 }
+.preguntas {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: $gris;
+    h3{
+        font-family: $fuente-textos;
+        text-decoration: underline;
+        text-align: center;
+    }
+}
+.preg-pileta {
+    display: flex;
+    justify-content: center;
+    img {
+        width: 270px;
+        height: 250px;
+        margin: 2em;
+    }
+}
+.preg-pileta-texto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}

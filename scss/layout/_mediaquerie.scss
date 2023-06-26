@@ -71,6 +71,7 @@
         flex-direction: column;
         justify-content: center;           
     }
+    
 }
     //home
 .mapa-video {
@@ -113,6 +114,13 @@
     .card{
     margin: 1em;
     }
+}
+.preg-pileta {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 1em;
 }
 }    
 //tablet
