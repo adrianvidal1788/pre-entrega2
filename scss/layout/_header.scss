@@ -5,13 +5,17 @@ h1{
     font-size: $tamanio-parrafos;
     margin-top: 1em;
     margin-bottom: 1em;
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-name: aparecer;
     animation-iteration-count: 1;
+    &:hover {
+        background-color: none;
+        color: inherit;
+    }
 
 }
 .menu-desktop {
-    animation-duration: 7s;
+    animation-duration: 4s;
     animation-name: aparecer;
     animation-iteration-count: 1;
 }
@@ -28,8 +32,12 @@ h1{
     justify-content: center;
     color: $blanco;
     &:hover{
-        background-color: $azul-hover;
+        background-color: $gris;
+        h1 {
+            background-color: none;
+        }
     }
+    
 .navbar-brand {
     display: flex;
     justify-content: center;

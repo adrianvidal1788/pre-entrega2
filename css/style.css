@@ -13,13 +13,17 @@ h1 {
   font-size: 2em;
   margin-top: 1em;
   margin-bottom: 1em;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-name: aparecer;
   animation-iteration-count: 1;
 }
+h1:hover {
+  background-color: none;
+  color: inherit;
+}
 
 .menu-desktop {
-  animation-duration: 7s;
+  animation-duration: 4s;
   animation-name: aparecer;
   animation-iteration-count: 1;
 }
@@ -38,7 +42,10 @@ h1 {
   color: #fff;
 }
 .container-fluid a:hover {
-  background-color: #0b96f3;
+  background-color: rgb(222, 216, 216);
+}
+.container-fluid a:hover h1 {
+  background-color: none;
 }
 .container-fluid a .navbar-brand {
   display: flex;
@@ -113,12 +120,24 @@ h2 {
   justify-content: center;
   margin-bottom: 2em;
 }
+.nuestros-servicios .limpieza {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1em;
+}
 .nuestros-servicios .limpieza img {
   margin: 1em;
   width: 100px;
   height: 100px;
+}
+.nuestros-servicios .amenities {
   display: flex;
+  justify-content: center;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   margin: 1em;
 }
@@ -128,6 +147,14 @@ h2 {
   height: 100px;
   display: flex;
   flex-direction: column;
+  text-align: center;
+  margin: 1em;
+}
+.nuestros-servicios .comidas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   margin: 1em;
 }
@@ -143,6 +170,13 @@ h2 {
 
 .nuestros-servicios {
   background-color: rgb(222, 216, 216);
+  padding: 2em;
+}
+.nuestros-servicios h3 {
+  text-decoration: underline;
+}
+.nuestros-servicios h4 {
+  text-decoration: underline;
 }
 
 .color-titulo {
@@ -176,6 +210,10 @@ h2 {
   margin-bottom: 2em;
 }
 
+h2 {
+  padding: 1em;
+}
+
 .img-promos {
   display: flex;
   flex-direction: row;
@@ -204,8 +242,30 @@ h2 {
   margin: 1em;
 }
 
+.titulo-fechas {
+  text-align: center;
+  font-family: "NotoSerif-regular";
+  background-color: rgb(222, 216, 216);
+  margin-top: 4em;
+  margin-bottom: 4em;
+  padding: 2em;
+}
+
+.img-fechas {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.img-fechas img {
+  margin: 4em;
+}
+
 .villa {
   background-color: rgb(222, 216, 216);
+  padding: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 .villa h3 {
   text-align: center;
@@ -228,6 +288,9 @@ h2 {
   background-color: rgb(222, 216, 216);
   text-align: center;
   font-family: "NotoSerif-regular";
+  padding: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .pre {
@@ -245,6 +308,7 @@ h2 {
   margin-top: 2em;
   margin-bottom: 2em;
   background-color: rgb(222, 216, 216);
+  padding: 2em;
 }
 .preguntas h3 {
   font-family: "NotoSerif-regular";
@@ -267,6 +331,7 @@ h2 {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 2em;
 }
 
 .footer-menu {
@@ -300,8 +365,9 @@ h2 {
   margin: 1em;
 }
 .menu-2 a:hover {
-  background-color: #0b96f3;
+  background-color: rgb(222, 216, 216);
   padding: 0.5em;
+  color: black;
 }
 
 .footer {
@@ -441,6 +507,19 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 0%;
+  }
+  .img-fechas {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+  }
+  .img-fechas img {
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 320px;
+    height: auto;
   }
   .fotos-villa {
     display: flex;

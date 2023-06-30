@@ -19,7 +19,7 @@
     <div class="menu-desktop">
       <nav class="navbar bg-dark">
           <div class="container-fluid">
-                <h1>Hotel el paraiso</h1>
+                <a class="navbar-brand" href="../index.html"><h1>Hotel el Paraiso</h1></a>
                 <a class="navbar-brand" href="../index.html">Home</a>
                 <a class="navbar-brand" href="./preguntas-frecuentes.html">Preguntas frecuentes</a>
                 <a class="navbar-brand" href="./galeria.html">Galeria</a>
@@ -31,20 +31,27 @@
       </nav>
     </div>
     <div class="menu-mobil">
-      <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
-          <div class="bg-dark p-4">
-            <a href="../index.html">Home</a>
-            <a href="./galeria.html">Galeria</a>
-            <a href="./preguntas-frecuentes.html">Preguntas frecuentes</a>
-      </div>
-    </div>
-        <nav class="navbar navbar-dark bg-dark">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button><h1>Hotel el Paraiso</h1>
-          </div>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid animate__animated animate__slideInDown">
+              <a class="navbar-brand" href="../index.html"><h1>Holtel el Paraiso</h1></a>
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="navbar-collapse collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto mx-5">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./promociones.html">Promociones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./galeria.html">Galeria</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </div>
     </header>
     <!-- contenido principal -->

@@ -21,8 +21,9 @@
             padding: 1em;
             margin: 1em;
             &:hover{
-                background-color: $azul-hover;
+                background-color: $gris;
                 padding: 0.5em;
+                color: $negro;
             }
         }
 }

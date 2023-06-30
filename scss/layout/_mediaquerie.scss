@@ -46,6 +46,7 @@
         text-decoration: none;
         padding: 0;
     } 
+    //pag contactos
     .contactanos {
         background-color: black;
         display: flex;
@@ -94,6 +95,7 @@
 .parrafo-central{
     font-size: 1em;
 }   
+//pag promociones
 .img-promos {
     display: flex;
     flex-direction: column;
@@ -106,7 +108,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 0%;
 }
+.img-fechas {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+    img {
+        margin: auto;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        width: 320px;
+        height: auto;
+    }
+}
+//galeria
 .fotos-villa {
     display: flex;
     flex-direction: column;
@@ -115,6 +131,7 @@
     margin: 1em;
     }
 }
+//preg frec
 .preg-pileta {
     display: flex;
     justify-content: center;
